@@ -1,10 +1,17 @@
+/* ---- CONFIGURATION BASIQUE DU DOCUMENT---- */
+
 *{
     margin: 0;
     padding: 0;
     width: auto;
     height: auto;
     
+    
+    
 }
+
+
+/* ---- APPLIQUE AU BODY LA POLICE ET LA JOLIE COULEUR DU BACKGROUND---- */
 
 
 body{
@@ -14,10 +21,15 @@ body{
     background: linear-gradient(90deg, rgba(247,121,36,0.5592436803823091) 0%, rgba(136,59,223,0.6894958667060574) 100%); 
 }
 
+
+/* ---- FLEX POUR LE LOGO MY MUSIC---- */
+
 .logo{
     display: flex;
     justify-content: center;
 }
+
+/* ---- FLEX POUR LA NAVBAR---- */
 
 .navbar-nav{
     display: flex;
@@ -25,16 +37,15 @@ body{
     width: 70vw;
 }
 
+/* ---- CONFIGURATION DU MENU---- */
+
 .nav-link{
     font-size: 30px;
     color: white;
 }
 
-.nav-link:hover{
-    color: green;
-}
 
-
+/* ---- CONFIGURE LA BANNIERE MY MUSIC ---- */
 
 header{
     display: flex;
@@ -46,20 +57,54 @@ header{
     margin: auto;
 }
 
-.titre{
-    font-size: 50px;
-    margin-top: 55px;
-    
-}
+/* ---- CONFIGURE LES TITRES---- */
 
-.titre2{
-    font-size: 50px;
-    margin-top: 55px;
-    text-align: right;
-    
-}
+.titleH p {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    background: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    transition: 0.10s ease-out;
+    white-space: nowrap;
+  }
+  
+  .titleH {
+    position: relative;
+  }
+  
+
+/* ---- CONFIGURE LE TRAIT BLANC SUR LES TITRES---- */
+
+  .titleH:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: white;
+    bottom: 13px;
+    transition: all 0.2s ease-out;
+  }
 
 
+/* ---- CONFIGURE LE HOVER POUR LE TITRE---- */
+  
+  .titleH p:hover {
+    background-position: 0 5px;
+  }
+
+ /* ---- CONFIGURE LA DESCENTE DU TRAIT BLANC POUR LE TITRE---- */
+  
+  .titleH:hover:before {
+    transform: translateY(39px)
+  }
+
+/* ---- CONFIGURE LE FLEX POUR LES CARDS ARTISTES---- */
 
 .favoriteArt{
     display: flex;
@@ -74,7 +119,6 @@ header{
 .favoriteArt::before{
      content: '';
      position: absolute;
-     
      height: 100%;
     
 }
@@ -89,6 +133,9 @@ header{
     height: 100%;
   
 }
+
+
+/* ---- CONFIGURE LE FLEX POUR LA CARD---- */
 
 .containera{
     position: relative;
@@ -210,7 +257,10 @@ h2{
     text-align:center;
     padding: 20px;
   }
-  /* Slider */
+ 
+  
+
+  /* -------   SLIDER ------------------ */
   
   .slick-slide {
       margin: 0px 20px;
@@ -326,3 +376,95 @@ h2{
   .slick-arrow.slick-hidden {
       display: none;
   }
+
+
+
+
+
+  /* ---- FOOTER ----- */
+
+
+  /* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: rgb(247,121,36);
+    background: linear-gradient(90deg, rgba(247,121,36,0.5592436803823091) 0%, rgba(136,59,223,0.6894958667060574) 100%); 
+    
+}
+
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li{
+	padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+
+}
