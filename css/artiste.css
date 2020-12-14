@@ -1,0 +1,66 @@
+#pnlvideo{
+    width: 700px;
+}
+
+
+header{
+    margin-top: 100px;
+}
+
+
+.size{
+    
+    height: 500px;
+    width: 500px;
+    background-color: black;
+}
+
+.infoArtiste{
+    position: relative;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 4 / 2; }
+    .div4 { grid-area: 2 / 2 / 4 / 3; }
+    .div5 { grid-area: 4 / 1 / 6 / 2; }
+    .div6 { grid-area: 4 / 2 / 6 / 3; }
+    
+
+
+
+/* ----- RACCOURCI ----- */
+
+.flex{
+    display: flex;
+}
+
+.justifyC{
+    justify-content: center;
+}
+
+.justifySA{
+    justify-content: space-around;
+}
+
+.justifyFS{
+    justify-content: flex-start;
+}
+
+.justifyFE{
+    justify-content: flex-end;
+}
+

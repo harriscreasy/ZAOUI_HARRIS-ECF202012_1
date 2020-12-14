@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 6,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
@@ -23,5 +23,5 @@ $(document).ready(function(){
 
 
 function ouvrirPage(){
-    var search = document.querySelector(".form-control");
+    let search = document.querySelector(".form-control");
 }

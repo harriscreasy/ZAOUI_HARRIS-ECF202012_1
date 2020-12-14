@@ -5,9 +5,7 @@
     padding: 0;
     width: auto;
     height: auto;
-    
-    
-    
+
 }
 
 
@@ -44,18 +42,14 @@ body{
     color: white;
 }
 
-
-/* ---- CONFIGURE LA BANNIERE MY MUSIC ---- */
-
 header{
     display: flex;
     justify-content: center;
-    text-align: center;
-    border: 1px black solid;
-    border-radius: 15px;
-    width: 450px;
-    margin: auto;
 }
+
+
+
+
 
 /* ---- CONFIGURE LES TITRES---- */
 
@@ -75,6 +69,12 @@ header{
   
   .titleH {
     position: relative;
+    
+  }
+
+  .titleA{
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   
 
@@ -148,6 +148,8 @@ header{
     
 }
 
+/* ---- CONFIGURE LE CONTOUR DE LA CARD---- */
+
 .containera .carda{
     position: relative;
     width: 350px;
@@ -162,6 +164,9 @@ header{
     backdrop-filter: blur(10px);
 }
 
+
+/* ---- CONFIGURE L'INTERIEUR DE LA CARD---- */
+
 .containera .carda .contenta{
     position: relative; 
     display: flex;
@@ -173,11 +178,15 @@ header{
 }
 
 
+/* ---- CONFIGURE L'ANIMATION DE LA CARD AVEC LA MONTEE ET L'OPACITE---- */
+
 .containera .carda:hover .contenta{
     opacity: 1;
     transform: translateY(-20px);
 
 }
+
+/* ---- CONFIGURE LES IMAGES ET LA BORDURE---- */
 
 .containera .carda .contenta .imgArt{
     position: relative;
@@ -199,6 +208,8 @@ header{
     object-fit: cover;
 }
 
+/* ---- CONFIGURE LE NOM DE L'ARTISTE---- */
+
 .containera .carda .contenta .contentaArt h3{
     color: #fff;
     text-transform: uppercase;
@@ -210,6 +221,8 @@ header{
     line-height: 1.1em;
 }
 
+/* ---- CONFIGURE LE STYLE DE MUSIQUE---- */
+
 .containera .carda .contenta .contentaArt h3 span{
 
 
@@ -217,6 +230,8 @@ header{
     font-weight: 300;
     text-transform: initial;
 }
+
+/* ---- CONFIGURE LES ICONES DE RESEAUX---- */
 
 .containera .carda .sci {
     position: absolute;
@@ -227,6 +242,8 @@ header{
     justify-content: center;
    
 }
+
+/* ---- CONFIGURE LES ANIMATIONS DES ICONES DE RESEAUX---- */
 
 .containera .carda .sci li{
     list-style: none; 
@@ -240,25 +257,20 @@ header{
     
 }
 
+/* ---- CONFIGURE LES ANIMATIONS DES ICONES DE RESEAUX---- */
+
 .containera .carda:hover .sci li{
     transform: translateY(10px);
     opacity: 1;
 }
+
+/* ---- CONFIGURE LES ICONES DE RESEAUX---- */
 
 .containera .carda .sci li a {
     color: #fff;
     font-size: 24px;
 }
 
-
-
-
-h2{
-    text-align:center;
-    padding: 20px;
-  }
- 
-  
 
   /* -------   SLIDER ------------------ */
   
@@ -376,6 +388,73 @@ h2{
   .slick-arrow.slick-hidden {
       display: none;
   }
+
+
+.contentRandom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+.contentRandom .randomCard{
+
+position: relative;
+width: 300px;
+height: 400px;
+transform-style: preserve-3d;
+border-radius: 15px;
+
+
+}
+
+.contentRandom .randomCard .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 15px;
+}
+
+.contentRandom .randomCard .face.front{
+    background: transparent;
+    border: 15px solid black;
+
+}
+
+.contentRandom .randomCard:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.contentRandom .randomCard .face.back{
+    background: transparent;
+    transform: perspective(500px) rotateY(180deg);
+    border: 15px solid black;
+
+}
+
+.contentRandom .randomCard .face.back img{
+    width: 200px;
+}
+
+.contentRandom .randomCard:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+
+}
+
+
+
+
 
 
 
