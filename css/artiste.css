@@ -1,12 +1,26 @@
+/* ------- VIDEO PRESENTATION TAILLE ET MARGIN ------- */
+
 #pnlvideo{
     width: 700px;
+    margin-bottom: 50px;
 }
+
+/* ------- VIDEO STREAM TAILLE LARGEUR ET HAUTEUR ------- */
+
+.stream{
+    width: 500px;
+    height: 500px;
+}
+
+/* ------- MARGIN DU HEADER ------- */
 
 
 header{
     margin-top: 100px;
 }
 
+
+/* ------- DONNE UNE TAILLE AU DIV DE LA CLASSE PARENT ------- */
 
 .size{
     
@@ -15,16 +29,16 @@ header{
     background-color: black;
 }
 
-.infoArtiste{
-    position: relative;
-}
+
+/* ------- GRID DES 6 DIV  ------- */
+
 
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 50px;
-    grid-row-gap: 15px;
+    grid-row-gap: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,7 +51,15 @@ header{
     .div3 { grid-area: 2 / 1 / 4 / 2; }
     .div4 { grid-area: 2 / 2 / 4 / 3; }
     .div5 { grid-area: 4 / 1 / 6 / 2; }
-    .div6 { grid-area: 4 / 2 / 6 / 3; }
+    .div6 { 
+        grid-area: 4 / 2 / 6 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    
+    }
     
 
 
