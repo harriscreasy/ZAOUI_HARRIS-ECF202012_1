@@ -62,6 +62,12 @@ header{
     }
     
 
+.dateConcert, .lieuConcert, .covid{
+    color: white;
+    text-align: center;
+}
+
+
 
 
 /* ----- RACCOURCI ----- */
