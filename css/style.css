@@ -5,6 +5,7 @@
     padding: 0;
     width: auto;
     height: auto;
+    
 
 }
 
@@ -70,12 +71,15 @@ header{
   .titleH {
     position: relative;
     
+    
   }
 
   .titleA{
     margin-bottom: 50px;
     margin-top: 50px;
+    
   }
+
   
 
 /* ---- CONFIGURE LE TRAIT BLANC SUR LES TITRES---- */
@@ -453,8 +457,11 @@ border-radius: 15px;
 }
 
 
+#coeur:hover{
+    color: red;
+    transition: 0.5s;
 
-
+}
 
 
 
@@ -545,9 +552,5 @@ section .section-title {
     margin-bottom: 10px;
 }
 
-
-
-
 }
-
 
