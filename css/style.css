@@ -36,6 +36,19 @@ body{
     width: 70vw;
 }
 
+.btn{
+    color: black;
+    background: #fff;
+
+}
+
+.btn:hover{
+
+    background: rgb(247,121,36);
+    background: linear-gradient(90deg, rgba(247,121,36,0.5592436803823091) 0%, rgba(136,59,223,0.6894958667060574) 100%);
+
+
+}
 /* ---- CONFIGURATION DU MENU---- */
 
 .nav-link{
@@ -66,6 +79,10 @@ header{
     background-repeat: no-repeat;
     transition: 0.10s ease-out;
     white-space: nowrap;
+    
+    
+    
+    
   }
   
   .titleH {
@@ -77,6 +94,9 @@ header{
   .titleA{
     margin-bottom: 50px;
     margin-top: 50px;
+   
+    
+    
     
   }
 
@@ -275,188 +295,6 @@ header{
     font-size: 24px;
 }
 
-
-  /* -------   SLIDER ------------------ */
-  
-  .slick-slide {
-      margin: 0px 20px;
-  }
-  
-  .slick-slide img {
-      width: 100%;
-  }
-  
-  .slick-slider
-  {
-      position: relative;
-      display: block;
-      box-sizing: border-box;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-              user-select: none;
-      -webkit-touch-callout: none;
-      -khtml-user-select: none;
-      -ms-touch-action: pan-y;
-          touch-action: pan-y;
-      -webkit-tap-highlight-color: transparent;
-  }
-  
-  .slick-list
-  {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-  }
-  .slick-list:focus
-  {
-      outline: none;
-  }
-  .slick-list.dragging
-  {
-      cursor: pointer;
-      cursor: hand;
-  }
-  
-  .slick-slider .slick-track,
-  .slick-slider .slick-list
-  {
-      -webkit-transform: translate3d(0, 0, 0);
-         -moz-transform: translate3d(0, 0, 0);
-          -ms-transform: translate3d(0, 0, 0);
-           -o-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-  }
-  
-  .slick-track
-  {
-      position: relative;
-      top: 0;
-      left: 0;
-      display: block;
-  }
-  .slick-track:before,
-  .slick-track:after
-  {
-      display: table;
-      content: '';
-  }
-  .slick-track:after
-  {
-      clear: both;
-  }
-  .slick-loading .slick-track
-  {
-      visibility: hidden;
-  }
-  
-  .slick-slide
-  {
-      display: none;
-      float: left;
-      height: 100%;
-      min-height: 1px;
-  }
-  [dir='rtl'] .slick-slide
-  {
-      float: right;
-  }
-  .slick-slide img
-  {
-      display: block;
-  }
-  .slick-slide.slick-loading img
-  {
-      display: none;
-  }
-  .slick-slide.dragging img
-  {
-      pointer-events: none;
-  }
-  .slick-initialized .slick-slide
-  {
-      display: block;
-  }
-  .slick-loading .slick-slide
-  {
-      visibility: hidden;
-  }
-  .slick-vertical .slick-slide
-  {
-      display: block;
-      height: auto;
-      border: 1px solid transparent;
-  }
-  .slick-arrow.slick-hidden {
-      display: none;
-  }
-
-
-.contentRandom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    
-}
-
-.contentRandom .randomCard{
-
-position: relative;
-width: 300px;
-height: 400px;
-transform-style: preserve-3d;
-border-radius: 15px;
-
-
-}
-
-.contentRandom .randomCard .face{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-    transition: 1s ease-in-out;
-    transform: perspective(500px) rotateY(0deg);
-    border-radius: 15px;
-}
-
-.contentRandom .randomCard .face.front{
-    background: transparent;
-    border: 15px solid black;
-
-}
-
-.contentRandom .randomCard:hover .face.front{
-    transform: perspective(500px) rotateY(180deg);
-}
-
-.contentRandom .randomCard .face.back{
-    background: transparent;
-    transform: perspective(500px) rotateY(180deg);
-    border: 15px solid black;
-
-}
-
-.contentRandom .randomCard .face.back img{
-    width: 200px;
-}
-
-.contentRandom .randomCard:hover .face.back{
-    transform: perspective(500px) rotateY(360deg);
-
-}
-
-
 #coeur:hover{
     color: red;
     transition: 0.5s;
@@ -464,10 +302,24 @@ border-radius: 15px;
 }
 
 
+.videoyouyou{
+    display: flex;
+    justify-content: center;
+       
+    }
+    .videoyouyou iframe {
+        width: 50vw;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+    
 
 
 
-  /* ---- FOOTER ----- */
+
+
+
+  /* ----------------------------------- FOOTER -------------------------------------------- */
 
 
   /* Footer */
@@ -550,6 +402,22 @@ section .section-title {
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
+}
+
+.titleH p {
+    font-size: 2rem;
+    
+}
+
+.titleH:before {
+    height: 9px;
+    bottom: 8px;
+}
+
+.videoyouyou iframe {
+    width: 80vw;
+    height: 300px;
+    margin-bottom: 50px;
 }
 
 }

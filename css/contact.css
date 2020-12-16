@@ -1,0 +1,96 @@
+  
+  .login-box {
+   
+    
+    width: 50vw;
+    margin: auto;
+    background: transparent;
+    
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 18px;
+  }
+
+  
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    border: 3px solid white;
+    width: 50vw;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+  }
+  
+  .login-box a:hover {
+    background: rgb(247,121,36);
+    background: linear-gradient(90deg, rgba(247,121,36,0.5592436803823091) 0%, rgba(136,59,223,0.6894958667060574) 100%); 
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px orangered,
+                0 0 25px orange,
+                0 0 50px purple,
+                0 0 100px pink;
+  }
+  
+ 
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  

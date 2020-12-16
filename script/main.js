@@ -1,27 +1,7 @@
-$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 5,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
 
+// ----- FONCTION POUR TELECHARGER UN FICHIER DU BUREAU ------
 
-function ouvrirPage(){
-    let search = document.querySelector(".form-control");
+function update_image(){
+    let file = document.querySelector('input[type=file]').files[0];
+    img.src =  window.URL.createObjectURL(file);
 }
