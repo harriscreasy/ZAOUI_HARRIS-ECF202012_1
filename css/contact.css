@@ -93,4 +93,13 @@
       bottom: 100%;
     }
   }
+
+
+  @media (max-width:767px){
+
+    input{
+      font-size: 10px;
+    }
+  }
+  
   
