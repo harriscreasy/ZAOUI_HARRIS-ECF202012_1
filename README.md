@@ -15,6 +15,12 @@ La page profil comporte une card avec les informations de l'utilisateur.
 
 La page contact permet d'envoyer un msg à l'équipe du site internet et de charger un fichier à partir de leur ordinateur.
 
+Le site est disponible : 
+x
+https://harriscreasy.github.io/ZAOUI_HARRIS-ECF202012_1/pageTravis.html
+
+https://myzik.netlify.app/
+
 
 
 
